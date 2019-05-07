@@ -20,7 +20,7 @@ RUN pip install --upgrade pip
 RUN pip install numpy pandas scikit-learn
 
 WORKDIR /root
-RUN wget --quiet http://apache.rediris.es/spark/spark-2.4.2/spark-2.4.2-bin-hadoop2.7.tgz
+RUN wget --quiet http://archive.apache.org/dist/spark/spark-2.4.2/spark-2.4.2-bin-hadoop2.7.tgz
 RUN tar -xf spark-2.4.2-bin-hadoop2.7.tgz -C /opt/ && \
 	ln -s /opt/spark-2.4.2-bin-hadoop2.7 /opt/spark && \
 	rm spark-2.4.2-bin-hadoop2.7.tgz && \
